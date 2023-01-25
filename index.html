@@ -82,7 +82,7 @@
   <main class="main">
     <section class="hero section" id="hero" data-section-title="Обо мне">
   <div class="hero__container container" data-aos="fade-up" id="hero-container">
-    <h1 class="hero__title">Дьяконов Руслан</h1>
+    <h1 class="hero__title neon-title">Дьяконов Руслан</h1>
     <p class="hero__descr">Привет, я <span>Frontend-разработчик и фрилансер</span>. Я относительно недавно влился в
       Web-разработку, но уже верстаю сайты средней сложности и создаю интересные приложения на React. Если Вам нужен
       сайт, то <a href="#feedback" class="hero__link link-hover link-hover-different">Вы пришли по адресу.</a></p>
@@ -164,9 +164,17 @@
       <h2 class="feedback__title">Остались вопросы?</h2>
       <p class="feedback__descr">Заполните небольшую форму и в ближайшее время я свяжусь с Вами!</p>
     </div>
-    <form action="#" class="feedback__form form box-shadow">
+    <form action="#" method="post" class="feedback__form form box-shadow">
       <label class="form__label">
         <input type="text" name="Имя" class="input-reset form__input" placeholder="Ваше Имя" required>
+      </label>
+      <label class="form__select" for="select">
+        <select id="select" required="required">
+          <option value="" disabled="disabled" selected="selected" class="form__option">Способ связи с Вами</option>
+          <option value="email" class="form__option">Email</option>
+          <option value="tg" class="form__option">Telegram</option>
+          <option value="whatsapp" class="form__option">WhatsApp</option>
+        </select>
       </label>
       <label class="form__label">
         <input type="text" name="Имя" class="input-reset form__input" placeholder="Почта или Telegram" required>
